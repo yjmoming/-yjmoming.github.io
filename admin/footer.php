@@ -3,4 +3,4 @@
 </html>
 <?php
 /** 注册一个结束插件 */
-\Typecho\Plugin::factory('admin/footer.php')->end();
+Typecho_Plugin::factory('admin/footer.php')->end();

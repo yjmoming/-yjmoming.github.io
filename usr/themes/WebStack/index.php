@@ -1,88 +1,131 @@
 <?php
 /**
- * 基于开源项目<a href="https://github.com/WebStackPage/WebStackPage.github.io" rel="nofollow" target="_blank">WebStack</a>的一个主题，请尊重劳动成果 <ul><li>由<a href="https://www.zmki.cn/5366.html"  target="_blank">钻芒博客</a>二次,内容包括新增顶栏和优化底栏及悬浮窗等N项。</li> <li>适配暗黑模式，支持cooke保存。</li><li>设置参数已整合至后台，无需手动修改HTML。</li><li>V2.5.06新增自动获取icon APi/内页/全站SEO/站内搜索/列表折叠等功能。</li><ul>
+ * 基于开源项目<a href="https://github.com/WebStackPage/WebStackPage.github.io" rel="nofollow" target="_blank">WebStack</a>的一个主题，请尊重劳动成果 <ul><li>由<a href="https:www.zmki.cn" rel="nofollow" target="_blank">钻芒博客</a>二次,内容包括新增顶栏和优化底栏及悬浮窗等N项。</li> <li>适配全新暗黑模式，支持cooke保存。</li><li>设置参数已整合至后台，无需手动修改HTML。</li><li>基于SEOGO.ME运营狗2019.12.01版本 此版本于2020年6月1日20:31:27二开打包</li><ul>
  * 
  * @package WebStack
  * @author SEOGO运营狗
- * @version 2.5.06 _钻芒二开优化版V2.5.06
+ * @version 0.7.19 _钻芒二开优化版V0.7.19
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $this->need('header.php');
 ?>
-<?php $this->need('sidebar.php'); ?>   
+<?php $this->need('sidebar.php'); ?> 
+<!--顶部美化开始-->  
+   <div class="board">
+          <div class="left">
+       <ul class="user-info-menu left-links list-inline list-unstyled">	 
+     <li><span class="board-title zmki_wap_zsy1"><a href="<?php $this->options->siteUrl();?>" ><i class="fa fa-home  "></i> 首页</a></span></li>
+	 <li><span class="board-title"><a href="<?php $this->options->zmki_links(); ?>"><i class="fa fa-plus-square  " ></i> 收录提交</a></span></li>
+	 <li><span class="board-title "><a href="<?php $this->options->zmki_url(); ?>" target="_blank"><i class="fa fa-heart xiaotubiao" style="color: #fb5962;"></i>&nbsp;<?php $this->options->zmki_name(); ?></a></span></li>
+	 <li><div class="zmki_wap" id="tp-weather-widget"> </li>
+	 <?php if($this->options->zmki_ah == '1'): ?>  
+	 <li><div class="zmki_yldh zmki_wap_zsy2"  title="切换模式"><a href="javascript:switchNightMode()"  target="_self"><svg  class="icon zmki_dh" aria-hidden="true"><use xlink:href="#icon-yueliang2"></use></svg></a></div></li> 
+	 <?php endif; ?>
+		  </ul>
+       </div>
+   </div>
+   	<li><a type="button" id="fullscreen" > </li>
+<!--心知天气开始-->
+<!--由于默认调用的免费版每分钟20次API调用限制，如有需求可前往知心天气官网购买服务配置-->
+<div id="tp-weather-widget"></div>
+<script>
+  (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+  window.SeniverseWeatherWidget('show', {
+    flavor: "slim",
+    location: "WX4FBXXFKE4F",
+    geolocation: true,
+    language: "zh-Hans",
+    unit: "c",
+    theme: "auto",
+    token: "6cc2a314-5422-4e9c-b3ad-7b9217f4e494",
+    hover: "enabled",
+    container: "tp-weather-widget"
+  })
+</script>
+<!--心知天气结束--> 
+   	<div class="main-content">  
+	<!--顶部美化结束-->	  
+	<!--顶部新增模块开始	-->
+	 <?php if($this->options->zmki_top_main == '1'): ?>  
+		<div  class="wapnone zmki_top_main" style="display: flex;"> 
+	  <div class="col-lg-4 wapnone ">
+        <a class="colorful-card zmki_top_one"  target="_blank" href="<?php $this->options->zmki_top_main_one_url(); ?>">
+          <i class="<?php $this->options->zmki_top_main_one_icon(); ?>"></i><?php $this->options->zmki_top_main_one_name(); ?></a>
+      </div>
+      <div class="col-lg-4 wapnone ">
+        <a class="colorful-card zmki_top_two" target="_blank" href="<?php $this->options->zmki_top_main_two_url(); ?>">
+          <i class="<?php $this->options->zmki_top_main_two_icon(); ?>"></i><?php $this->options->zmki_top_main_two_name(); ?></a>
+      </div>
+      <div class="col-lg-4 wapnone ">
+        <a class="colorful-card zmki_top_three"  target="_blank" href="<?php $this->options->zmki_top_main_three_url(); ?>">
+          <i class="<?php $this->options->zmki_top_main_three_icon(); ?>"></i><?php $this->options->zmki_top_main_three_name(); ?></a>
+      </div>
+	  <div class="col-lg-4 wapnone ">
+        <a class="colorful-card zmki_top_four"  target="_blank" href="<?php $this->options->zmki_top_main_four_url(); ?>">
+          <i class="<?php $this->options->zmki_top_main_four_icon(); ?>"></i><?php $this->options->zmki_top_main_four_name(); ?></a>
+      </div> 
+      </div>  
+      <?php endif; ?>
+	<?php if($this->options->isSearch == '1'): ?>
+    <?php $this->need('search.php'); ?> 
+	<?php endif; ?>
 	<?php Typecho_Widget::widget('Widget_Stat')->to($stat); ?>
 	<?php $this->widget('Widget_Metas_Category_List')->to($categories); ?>
 	<?php while ($categories->next()): ?>
 	<?php if(count($categories->children) === 0): ?>
-	<?php $this->widget('Widget_Archive@category-' . $categories->mid, 'order=order&pageSize=10000&type=category', 'mid=' . $categories->mid)->to($posts); ?> 
-	<h4 class="text-gray not-select"><i class="linecons-tag" style="margin-right: 7px;" id="<?php $categories->name(); ?>"></i><?php $categories->name(); ?></h4>
-	<div class="row" style="<?php $fold=$categories->description; if ($fold>"0"&$this->options->zmki_fold == '1'&&'2'||$this->options->zmki_fold == '2') { echo "display:none;";} ?>">
+	<?php $this->widget('Widget_Archive@category-' . $categories->mid, 'order=order&pageSize=10000&type=category', 'mid=' . $categories->mid)->to($posts); ?>
+	<h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="<?php $categories->name(); ?>"></i><?php $categories->name(); ?></h4>
+	<div class="row"> 
     <?php while ($posts->next()): ?> 
     <div class="col-sm-3">
 	<?php if($this->options->isLink == '1'): ?>
-	<!--开启内页--> 
-    <a href="<?php $posts->permalink() ?>" title="<?php $posts->title(); ?>" >
-	<div class="xe-widget xe-conversations box2 label-info"  data-toggle="tooltip" data-placement="bottom" title="" data-original-title="<?php $posts->permalink() ?>"> 
-    <div class="xe-comment-entry">
-          <span class="xe-user-img">
-            <img src="<?php if($posts->fields->logo == null):{echo $this->options->link_icon.$posts->fields->url.$this->options->link_icon_end;}else:{echo $posts->fields->logo;}endif;?>"  
-             class="img-circle" width="32" alt="<?php $posts->title(); ?>">
-          </span>
-	<div class="xe-comment">
-          <span class="xe-user-name overflowClip_1">
-              <strong><?php $posts->title(); ?></strong>
-          </span>
-            <p class="overflowClip_2"><?php echo $posts->fields->text;?></p> 
-     </div>
-     </div>
-     </div>
-     </a>
-     <?php endif; ?>
-     <?php if($this->options->isLink == '0'): ?>
-     <!--关闭内页-->
-      <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('<?php echo $posts->fields->url;?>', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="<?php echo $posts->fields->url;?>">
+	<div class="xe-widget xe-conversations box2 label-info" onclick="window.open('<?php echo $posts->fields->url;?>', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="<?php echo $posts->fields->url;?>">
     <div class="xe-comment-entry">
           <a class="xe-user-img">
-            <img src="<?php if($posts->fields->logo == null):{echo $this->options->link_icon.$posts->fields->url.$this->options->link_icon_end;}else:{echo $posts->fields->logo;}endif;?>"  
-             class="img-circle" width="32">
+            <img src="<?php echo $posts->fields->logo;?>" class="img-circle" width="32">
           </a>
 	<div class="xe-comment">
-          <a class="xe-user-name overflowClip_1">
+          <a href="#" class="xe-user-name overflowClip_1">
               <strong><?php $posts->title(); ?></strong>
           </a>
             <p class="overflowClip_2"><?php echo $posts->fields->text;?></p> 
      </div>
      </div>
      </div>
+     <?php endif; ?>
+     <?php if($this->options->isLink == '0'): ?>
+      <div class="xe-widget xe-conversations box2 label-info" >
+        <div class="xe-user-img">
+          <div class="xe-comment-entry">
+            <a href="<?php $posts->permalink() ?>"><img src="<?php echo $posts->fields->logo;?>" class="img-circle" width="40">
+            <div class="xe-comment"  data-toggle="tooltip" data-placement="bottom" title="" data-original-title="<?php echo $posts->fields->url;?>">
+              <strong><?php $posts->title(); ?></strong>
+              <p class="overflowClip_2"><?php echo $posts->fields->text;?></p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
       <?php endif; ?>
 	</div> 
   <?php endwhile; ?>
 </div>    
-
 <br />  
 <?php else: ?>
 <?php endif; ?>
 <?php endwhile; ?>
-<?php $this->need('footer.php'); ?>  
+<?php $this->need('footer.php'); ?> 
+<!--仿凡科 右侧悬浮窗 by:zmki   zmki.cn 2020年2月9日17:03:13-->
 <style>
 	.fk_service_qrimg_site {
     width: 119px;
     height: 119px;
     float: left;
-    margin: 12px 12px 5px 12px; 
+    margin: 12px 12px 5px 12px;
+    /* background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png) no-repeat -41px -26px; */
     background-image: url(<?php $this->options->fk_zmki_gzhimg(); ?>);
     background-size: 100% 100%;
 	} 
-	span.title,.main-menu{
-	font-size: <?php $this->options->menu_title(); ?>px;
-	}
-	.zmki_tianqi{
-    width: 120px;
-    height: 16px;
-	}
-	/*#he-plugin-simple div{*/
-	/*width:auto!important;*/
-	/*}*/
 	
 /*单栏*/
  <?php if($this->options->zmki_pcsl == '0'): ?>  
@@ -117,7 +160,7 @@ $this->need('header.php');
 .col-sm-3 {width: 12.5%;}
  <?php endif; ?> 
 
-/*手机端双栏显示 常规尺寸*/
+	/*手机端双栏显示 常规尺寸*/
 @media (max-width:768px) {  
 
 <?php if($this->options->zmki_wapsl == '0'): ?>  	
@@ -301,18 +344,7 @@ $this->need('header.php');
                 $('div.tipsClass').fadeOut();
             }, (time * 1000));
         }
-    })  
-    
-     
-    //  开启折叠
-    <?php  if($this->options->zmki_fold == '0'){ 
-    } else {
-      echo ' $(".text-gray").click(function(){
-                $(this).next().slideToggle(200)
-            }) ';
-    }
-    ?>  
-       
+    })
      
 </script>
 <?php if($this->options->fk_zmki == '1'): ?>  
@@ -351,5 +383,5 @@ $this->need('header.php');
 				<a id="01" href="/#" rel="go-top" class="fk_service_box fk_service_upward ">1</a>
 			<div class="fk_service_upward_cont"> <span class="fk_service_triangle"></span> <span> 返回顶部 </span> </div>
 			<a class="to-top" style="cursor: pointer; position: fixed; right: 38px; bottom: 38px;" id="d41d8cd98f00b204e9800998ecf8427e" "><i class="icon-up-small"></i></a>
-			</li>		 
 			 <?php endif; ?>
+			</li>		 

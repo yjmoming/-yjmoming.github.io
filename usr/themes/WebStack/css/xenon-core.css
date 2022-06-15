@@ -85,7 +85,7 @@ li{
 	fill: currentColor;
 	overflow: hidden;
 }
-@media screen and (max-width: 1221px) { .zmki_wap{display:none!important; }
+@media screen and (max-width: 1221px) { .zmki_wap{display:none; }
 }
 
 /*手机端适配  常规尺寸*/
@@ -96,7 +96,7 @@ li{
     margin-left: 10px;
 }
 .zmki_yldh { 
-    /*margin-left: -100%;*/
+    margin-left: -100%;
 }
 }
 
@@ -278,13 +278,7 @@ body.night .zmki_footer_mar a{
 body.night .EKHJj {
     color: #d6d6d6!important;
 }
-body.night .s-sticker .module {
-    color: #d6d6d6!important;
-}
 
-body.night .col-sm-3 a{
-    color: #d6d6d6!important;
-}
 
 /*body.night .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {*/
 /*    color: #333;*/
@@ -387,12 +381,12 @@ body.night .col-sm-3 a{
 }
 
 .fk_service_consult {
-	background: url(../images/20190827-5d652476ab305.png) no-repeat -366px -16px #fff
+	background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png) no-repeat -366px -16px #fff
 }
 
 .fk_service_consult:hover {
 	border: 0;
-	background: url(../images/20190827-5d652476ab305.png) no-repeat -410px -16px #4f7cfc
+	background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png) no-repeat -410px -16px #4f7cfc
 }
 
 .fk_service_consult:hover .fk_service_consult_cont {
@@ -462,7 +456,7 @@ body.night .col-sm-3 a{
 }
 
 .fk_service_hint>.fk_service_icon {
-	background: url(../images/20190827-5d652476ab305.png) no-repeat -460px -25px;
+	background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png) no-repeat -460px -25px;
 	width: 15px;
 	height: 15px;
 	margin: 13px 2px 0 18px
@@ -502,19 +496,19 @@ body.night .col-sm-3 a{
 }
 
 .fk_service_check_site>.fk_service_icon {
-	background: url(../images/20190827-5d652476ab305.png) no-repeat -461px -75px;
+	background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png) no-repeat -461px -75px;
 	width: 20px;
 	height: 20px;
 	margin: 15px 2px 0 45px
 }
 
 .fk_service_feedback {
-	background: url(../images/20190827-5d652476ab305.png) no-repeat -363px -64px #fff
+	background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png) no-repeat -363px -64px #fff
 }
 
 .fk_service_feedback:hover {
 	border: 0;
-	background: url(../images/20190827-5d652476ab305.png) no-repeat -407px -64px #4f7cfc;
+	background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png) no-repeat -407px -64px #4f7cfc;
 	cursor: pointer
 }
 
@@ -543,12 +537,12 @@ body.night .col-sm-3 a{
 
 
 .fk_service_qr {
-	background: url(../images/20190827-5d652476ab305.png) no-repeat -365px -113px #fff
+	background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png) no-repeat -365px -113px #fff
 }
 
 .fk_service_qr:hover {
 	border: 0;
-	background: url(../images/20190827-5d652476ab305.png) no-repeat -409px -113px #4f7cfc
+	background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png) no-repeat -409px -113px #4f7cfc
 }
 
 .fk_service_qr:hover .fk_service_qr_cont {
@@ -590,7 +584,7 @@ body.night .col-sm-3 a{
 	height: 119px;
 	float: left;
 	margin: 12px 12px 5px 12px;
-	background: url(../images/20190827-5d652476ab305.png) no-repeat -198px -26px
+	background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png) no-repeat -198px -26px
 }
 
 .fk_service_qrimg_wxast {
@@ -606,7 +600,7 @@ body.night .col-sm-3 a{
 	height: 119px;
 	float: left;
 	margin: 12px 12px 5px 12px;
-	background: url(../images/20190827-5d652476ab305.png) no-repeat -41px -177px
+	background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png) no-repeat -41px -177px
 }
 
 .fk_service_qrimg_wxapp {
@@ -614,7 +608,7 @@ body.night .col-sm-3 a{
 	height: 119px;
 	float: left;
 	margin: 12px 12px 5px 12px;
-	background: url(../images/20190827-5d652476ab305.png) no-repeat -198px -177px
+	background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png) no-repeat -198px -177px
 }
 
 .fk_service_qrimg_fkmall {
@@ -622,7 +616,7 @@ body.night .col-sm-3 a{
 	height: 119px;
 	float: left;
 	margin: 12px 12px 5px 12px;
-	background: url(../images/20190827-5d652476ab305.png) no-repeat -41px -326px
+	background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png) no-repeat -41px -326px
 }
 
 .fk_service_qr_cont>.fk_service_qrtext {
@@ -643,12 +637,12 @@ body.night .col-sm-3 a{
 
 .fk_service_upward {
 	display: none;
-	background: url(../images/20190827-5d652476ab305.png) no-repeat -363px -159px #fff
+	background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png) no-repeat -363px -159px #fff
 }
 
 .fk_service_upward:hover {
 	border: 0;
-	background: url(../images/20190827-5d652476ab305.png) no-repeat -407px -159px #4f7cfc;
+	background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png) no-repeat -407px -159px #4f7cfc;
 	cursor: pointer
 }
 
@@ -684,14 +678,14 @@ body.night .col-sm-3 a{
 /* 新增图标->zmki 开始*/
 .fk_service_jk {
 	/* 前景图标 */
-	background: url(../images/20191218-c9feba3074fcf.png) no-repeat center center #fff;
+	background: url(https://a-oss.zmki.cn/2019/20191218-c9feba3074fcf.png) no-repeat center center #fff;
 	background-size: 40%40%;
 }
 
 .fk_service_jk:hover {
 	border: 0;
 	/* 鼠标悬浮图标 */
-	background: url(../images/20191218-9e8acd5341cdc.png) no-repeat center center #4f7cfc;
+	background: url(https://a-oss.zmki.cn/2019/20191218-9e8acd5341cdc.png) no-repeat center center #4f7cfc;
 	background-size: 40%40%;
 	cursor: pointer
 }
@@ -723,13 +717,13 @@ body.night .col-sm-3 a{
 
 /* 新增图标->zmki 开始*/
 .fk_service_ws {
-	background: url(../images/20191218-61b4baac98ee7.png) no-repeat center center #fff;
+	background: url(https://a-oss.zmki.cn/2019/20191218-61b4baac98ee7.png) no-repeat center center #fff;
 	background-size: 50%50%;
 }
 
 .fk_service_ws:hover {
 	border: 0;
-	background: url(../images/20191218-8ded04c01bb3c.png) no-repeat center center #4f7cfc;
+	background: url(https://a-oss.zmki.cn/2019/20191218-8ded04c01bb3c.png) no-repeat center center #4f7cfc;
 	background-size: 50%50%;
 	cursor: pointer
 }
@@ -762,13 +756,13 @@ body.night .col-sm-3 a{
 
 /* 闪电 新增图标->zmki 开始*/
 .fk_service_sd {
-	background: url(../images/20191218-94664bd399372.png) no-repeat center center #fff;
+	background: url(https://a-oss.zmki.cn/2019/20191218-94664bd399372.png) no-repeat center center #fff;
 	background-size: 50%50%;
 }
 
 .fk_service_sd:hover {
 	border: 0;
-	background: url(../images/20191218-fab840acee28b.png) no-repeat center center #4f7cfc;
+	background: url(https://a-oss.zmki.cn/2019/20191218-fab840acee28b.png) no-repeat center center #4f7cfc;
 	background-size: 50%50%;
 	cursor: pointer
 }
@@ -800,13 +794,13 @@ body.night .col-sm-3 a{
 
 /* 导航 新增图标->zmki 开始*/
 .fk_service_dh {
-	background: url(../images/20191218-711bcdc875f32.png) no-repeat center center #fff;
+	background: url(https://a-oss.zmki.cn/2019/20191218-711bcdc875f32.png) no-repeat center center #fff;
 	background-size: 60%60%;
 }
 
 .fk_service_dh:hover {
 	border: 0;
-	background: url(../images/20191218-8d9cf4c72a239.png) no-repeat center center #4f7cfc;
+	background: url(https://a-oss.zmki.cn/2019/20191218-8d9cf4c72a239.png) no-repeat center center #4f7cfc;
 	background-size: 60%60%;
 	cursor: pointer
 }
@@ -838,13 +832,13 @@ body.night .col-sm-3 a{
 
 /* 爱心 新增图标->zmki 开始*/
 .fk_service_ax {
-	background: url(../images/20191218-bf1792e790a39.png) no-repeat center center #fff;
+	background: url(https://a-oss.zmki.cn/2019/20191218-bf1792e790a39.png) no-repeat center center #fff;
 	background-size: 40%40%;
 }
 
 .fk_service_ax:hover {
 	border: 0;
-	background: url(../images/20191218-f379809ce7aef.png) no-repeat center center #4f7cfc;
+	background: url(https://a-oss.zmki.cn/2019/20191218-f379809ce7aef.png) no-repeat center center #4f7cfc;
 	background-size: 40%40%;
 	cursor: pointer
 }
@@ -876,13 +870,13 @@ body.night .col-sm-3 a{
 
 /* 点赞 新增图标->zmki 开始*/
 .fk_service_dz {
-	background: url(../images/20191218-3d077e8df0bf0.png) no-repeat center center #fff;
+	background: url(https://a-oss.zmki.cn/2019/20191218-3d077e8df0bf0.png) no-repeat center center #fff;
 	background-size: 50%50%;
 }
 
 .fk_service_dz:hover {
 	border: 0;
-	background: url(../images/20191218-986a9393f3e9e.png) no-repeat center center #4f7cfc;
+	background: url(https://a-oss.zmki.cn/2019/20191218-986a9393f3e9e.png) no-repeat center center #4f7cfc;
 	background-size: 50%50%;
 	cursor: pointer
 }
@@ -925,13 +919,13 @@ body.night .col-sm-3 a{
 /*全屏图标*/ 
 .fk_service_zmkiqp {
 	z-index: 555;
-	background: url(../images/20200211-efbcc3deadd01.png) no-repeat center center #fff;
+	background: url(https://a-oss.zmki.cn/2020/20200211-efbcc3deadd01.png) no-repeat center center #fff;
 	background-size: 50%50%;
 }
 
 .fk_service_zmkiqp:hover {
 	border: 0;
-	background: url(../images/20200211-4275b242ddda3.png) no-repeat center center #4f7cfc;
+	background: url(https://a-oss.zmki.cn/2020/20200211-4275b242ddda3.png) no-repeat center center #4f7cfc;
 	background-size: 50%50%;
 	cursor: pointer
 }
@@ -962,13 +956,13 @@ body.night .col-sm-3 a{
 /* 暗黑 新增图标->zmki 开始*/
 .fk_service_zmkiah {
 	z-index: 555;
-	background: url(../images/20200209-8bab92321b7d9.png) no-repeat center center #fff;
+	background: url(https://a-oss.zmki.cn/2020/20200209-8bab92321b7d9.png) no-repeat center center #fff;
 	background-size: 50%50%;
 }
 
 .fk_service_zmkiah:hover {
 	border: 0;
-	background: url(../images/20200209-838b4c0ed71c3.png) no-repeat center center #4f7cfc;
+	background: url(https://a-oss.zmki.cn/2020/20200209-838b4c0ed71c3.png) no-repeat center center #4f7cfc;
 	background-size: 50%50%;
 	cursor: pointer
 }
@@ -1001,7 +995,7 @@ body.night .col-sm-3 a{
 	max-height: 232px;
 	position: fixed;
 	right: 10px;
-	top: 60%;
+	top: 65%;
 	/* 垂直位置 */
 	font-family: "寰蒋闆呴粦";
 	font-size: 14px;
@@ -1920,25 +1914,6 @@ body {
 	-moz-transition: opacity 100ms ease-in-out;
 	-o-transition: opacity 100ms ease-in-out;
 	transition: opacity 100ms ease-in-out
-}
-@media screen and (max-width: 768px)
-{
- .page-container .main-content {
-	display: block;
-	margin-top: 60px;
-	/*display: table-cell;*/
-	position: relative;
-	z-index: 1;
-	padding:20px;
-	padding-bottom: 0;
-	vertical-align: top;
-	word-break: break-word;
-	width: 100%;
-	-webkit-transition: opacity 100ms ease-in-out;
-	-moz-transition: opacity 100ms ease-in-out;
-	-o-transition: opacity 100ms ease-in-out;
-	transition: opacity 100ms ease-in-out
-}  
 }
 
 .page-container .main-content.is-loading {
@@ -3439,14 +3414,13 @@ body {
 }
 
 footer.main-footer {
-	padding: 20px 0px;
+	padding: 20px 30px;
 	border-top: 1px solid #ddd;
 	font-size: 12px;
-	margin-left: 0px;
-    margin-right: 0px;
+	margin-left: -30px;
+	margin-right: -30px;
 	margin-top: 10px;
 	background-color: #f9f9f9;
-	width: 100%;
 }
 
 footer.main-footer:before,
@@ -5296,7 +5270,9 @@ body.chat-open #chat {
 	.page-container .main-content .main-footer {
 		position: relative;
 		left: 0;
-		right: auto; 
+		right: auto;
+		margin-left: -30px;
+		margin-right: -30px
 	}
 
 	.page-container {
@@ -10295,16 +10271,9 @@ a.text-yellow:hover {
 }
 
 .text-gray {
-	color: #555;
-	cursor: pointer;
+	color: #555
 }
-.text-gray.not-select{
-    -moz-user-select:none; /*火狐*/
-    -webkit-user-select:none; /*webkit浏览器*/
-    -ms-user-select:none; /*IE10*/
-    -khtml-user-select:none; /*早期浏览器*/
-    user-select:none;
-}
+
 a.text-gray:hover {
 	color: #3b3b3b
 }
